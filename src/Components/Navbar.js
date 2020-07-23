@@ -4,14 +4,13 @@ import { Navbar, Nav, NavDropdown} from 'react-bootstrap';
 function NavBar(){
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="/">Nic's Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                
-                </Nav>
                 <Nav>
                     <NavDropdown title="Projects" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/projects">All Projects</NavDropdown.Item>
+                        <NavDropdown.Divider/>
                         <NavDropdown.Item href="https://videosync.co/" target="blank">Video Sync</NavDropdown.Item>
                         <NavDropdown.Item href="https://cnn.com/" target="blank">CNN</NavDropdown.Item>
                         <NavDropdown.Item href="https://google.com/" target="blank">Google</NavDropdown.Item>
